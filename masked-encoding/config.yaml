@@ -1,0 +1,57 @@
+# Description: Configuration file for the project
+
+# General configuration
+
+pre-training:
+  batch_size: 32
+  num_workers: 8
+  num_epochs: 100
+  lr: 0.0001
+  optimizer: adam
+  criterion: mse
+
+fine-tuning:
+  batch_size: 32
+  num_workers: 4
+  epochs: 20
+  learning_rate: 0.001
+  optimizer: adam
+  criterion: bcelogits
+
+# Data configuration
+
+transforms:
+  normalize:
+    mean: [0.5, 0.5, 0.5]
+    std: [0.5, 0.5, 0.5]
+  vertical_flip: False
+  horizontal_flip: False
+  rotation: 0
+
+# Model configuration
+
+models:
+  mae:
+    n_patches: 14
+    mask_proportion: 0.25
+    embedding_dim: 1024
+    image_dim: 224
+
+encoders:
+  transformer: 
+    num_layers: 8
+    num_heads: 8
+    mlp_ratio: 6
+    dropout: 0.3
+  cnn:
+    num_layers: 4
+    conv_channels: 64
+    kernel_size: 3
+    dropout: 0.3
+
+decoders:
+  transformer:
+    num_layers: 8
+    num_heads: 8
+    mlp_ratio: 4
+    dropout: 0.3
