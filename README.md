@@ -28,6 +28,6 @@ See the code [here](EffiecentNet/).
 ### Masked AutoEncoding
 
 See the code [here](masked-encoding/).  
--> [(Model)](masked-encoding/masked_auto-wildfire-encoder.pt)
+-> [(Model)](https://www.dropbox.com/scl/fi/ovb15q41q0h4zcwwzx02q/masked_auto-wildfire-encoder.pt?rlkey=1ttrhwk1rn6eprn040ds2dnuh&st=1lwq2p0y&dl=0)
 
 
