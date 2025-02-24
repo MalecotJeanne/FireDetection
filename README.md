@@ -2,6 +2,8 @@
 Deep learning-based approach for wildfire prediction using satellite images.  
 *Group project as part of the course CSC_5AI23_TA*
 
+> [Report](Final_report.pdf).  
+
 ---
 
 ## Dataset
